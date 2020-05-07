@@ -101,7 +101,7 @@ def turn
     puts "Pls enter new, valid position"
     user_choice = input_to_index(gets.strip)
   end
-  move(@board, user_choice, current_player)
+  move(user_choice, current_player)
   display_board
   @board
 end
